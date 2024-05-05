@@ -110,7 +110,7 @@ exe_jack_lset = executable(
   'jack_lset',
   c_args: c_args_common,
   sources: ['lset.c'],
-  dependencies: [dep_jack],
+  dependencies: [dep_jack, lib_m],
   install: true
 )
 
@@ -118,7 +118,7 @@ exe_jack_lsync = executable(
   'jack_lsync',
   c_args: c_args_common,
   sources: ['lsync.c'],
-  dependencies: [dep_jack],
+  dependencies: [dep_jack, lib_m],
   install: true
 )
 
