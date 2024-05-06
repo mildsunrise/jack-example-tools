@@ -118,7 +118,7 @@ exe_jack_lsync = executable(
   'jack_lsync',
   c_args: c_args_common,
   sources: ['lsync.c'],
-  dependencies: [dep_jack, lib_m],
+  dependencies: [dep_jack, dep_threads, lib_m],
   install: true
 )
 
